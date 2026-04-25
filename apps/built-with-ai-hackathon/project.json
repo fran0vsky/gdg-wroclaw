@@ -1,25 +1,25 @@
 {
-  "name": "gdg-event",
+  "name": "built-with-ai-hackathon",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/gdg-event/src",
+  "sourceRoot": "apps/built-with-ai-hackathon/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/gdg-event",
-        "browser": "apps/gdg-event/src/main.ts",
-        "tsConfig": "apps/gdg-event/tsconfig.app.json",
+        "outputPath": "dist/apps/built-with-ai-hackathon",
+        "browser": "apps/built-with-ai-hackathon/src/main.ts",
+        "tsConfig": "apps/built-with-ai-hackathon/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/gdg-event/public"
+            "input": "apps/built-with-ai-hackathon/public"
           }
         ],
-        "styles": ["apps/gdg-event/src/styles.scss"]
+        "styles": ["apps/built-with-ai-hackathon/src/styles.scss"]
       },
       "configurations": {
         "production": {
@@ -50,10 +50,10 @@
       "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "gdg-event:build:production"
+          "buildTarget": "built-with-ai-hackathon:build:production"
         },
         "development": {
-          "buildTarget": "gdg-event:build:development"
+          "buildTarget": "built-with-ai-hackathon:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -65,9 +65,9 @@
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "gdg-event:build",
+        "buildTarget": "built-with-ai-hackathon:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/gdg-event/browser",
+        "staticFilePath": "dist/apps/built-with-ai-hackathon/browser",
         "spa": true
       }
     }
