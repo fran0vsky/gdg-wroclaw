@@ -1,0 +1,75 @@
+{
+  "name": "built-with-ai-hackathon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/built-with-ai-hackathon/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/built-with-ai-hackathon",
+        "browser": "apps/built-with-ai-hackathon/src/main.ts",
+        "tsConfig": "apps/built-with-ai-hackathon/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/built-with-ai-hackathon/public"
+          }
+        ],
+        "styles": ["apps/built-with-ai-hackathon/src/styles.scss"]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "12kb",
+              "maximumError": "20kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "built-with-ai-hackathon:build:production"
+        },
+        "development": {
+          "buildTarget": "built-with-ai-hackathon:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "built-with-ai-hackathon:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/built-with-ai-hackathon/browser",
+        "spa": true
+      }
+    }
+  }
+}
