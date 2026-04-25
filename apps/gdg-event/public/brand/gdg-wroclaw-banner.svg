@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-labelledby="bTitle">
+  <title id="bTitle">Google Developer Group WrocBaw  brand banner</title>
+  <rect width="1200" height="200" fill="#000000"/>
+  <!-- Stylized code brackets (GDG four colors) -->
+  <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(48 40)">
+    <path d="M20 20 L8 40 L8 100 L8 120 L20 140" stroke="#EA4335"/>
+    <path d="M20 20 L8 40" stroke="#4285F4"/>
+    <path d="M8 100 L8 120 L20 140" stroke="#4285F4"/>
+    <path d="M100 20 L112 40 L112 100 L112 120 L100 140" stroke="#F9AB00"/>
+    <path d="M100 20 L112 40" stroke="#34A853"/>
+    <path d="M112 100 L112 120 L100 140" stroke="#34A853"/>
+  </g>
+  <!-- Slashes -->
+  <path d="M200 30 L180 170" stroke="#4285F4" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M230 30 L210 170" stroke="#5DB3FF" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- Cloud + WrocBaw -->
+  <g transform="translate(420 55)">
+    <path d="M0 50 Q0 20 40 20 Q50 0 80 0 Q120 0 140 30 Q180 20 200 50 Q240 50 240 80 Q240 100 200 100 L40 100 Q0 100 0 50 Z" fill="none" stroke="#4285F4" stroke-width="3"/>
+    <text x="120" y="70" text-anchor="middle" fill="#57caff" font-family="Roboto, system-ui, sans-serif" font-size="28" font-weight="500">WrocBaw</text>
+  </g>
+  <!-- Stacked label -->
+  <g transform="translate(720 40)" fill="#ffffff" font-family="Roboto, system-ui, sans-serif">
+    <text x="0" y="0" font-size="22" font-weight="400">Google</text>
+    <text x="0" y="32" font-size="22" font-weight="400">Developer</text>
+    <text x="0" y="64" font-size="22" font-weight="400">Groups</text>
+  </g>
+  <!-- Bracket mark on right -->
+  <g fill="none" stroke-width="5" transform="translate(1020 50)">
+    <path d="M0 0 L-12 20 L-12 60 L-12 100 L0 120" stroke="#5DB3FF"/>
+    <path d="M0 0 L-12 20" stroke="#4285F4"/>
+    <path d="M-12 100 L0 120" stroke="#4285F4"/>
+    <path d="M80 0 L92 20 L92 60 L92 100 L80 120" stroke="#5DB3FF"/>
+    <path d="M80 0 L92 20" stroke="#1a73e8"/>
+    <path d="M92 100 L80 120" stroke="#1a73e8"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+@import '../../../libs/shared/styles/palette.css';
+
+// Marketing page: use light UI surfaces even when OS prefers dark (GDG light sections)
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ui-background: #ffffff;
+    --ui-surface: #ffffff;
+    --ui-surface-variant: #f1f3f4;
+    --ui-text-primary: #202124;
+    --ui-text-secondary: #5f6368;
+    --ui-outline: #dadce0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  background: var(--ui-background);
+  color: var(--ui-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--gdg-primary);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
