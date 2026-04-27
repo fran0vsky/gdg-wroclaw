@@ -100,6 +100,11 @@ $hero-canvas: var(--gdg-black-02);
   box-shadow: 0 6px 24px rgba(52, 168, 83, 0.45);
 }
 
+.btn--sm {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
 .btn--ghost {
   background: transparent;
   color: #e8eaed;
@@ -259,6 +264,22 @@ $hero-canvas: var(--gdg-black-02);
   display: flex;
   gap: 32px;
   align-items: center;
+}
+
+.nav-link {
+  color: #bdc1c6;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &.active {
+    color: var(--gdg-primary);
+  }
 }
 
 .text-emphasis {
@@ -537,8 +558,13 @@ $hero-canvas: var(--gdg-black-02);
 .program-panel__body {
   color: var(--ui-text-secondary);
   max-width: 38rem;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   line-height: 1.65;
+}
+
+.program-panel__cta {
+  display: flex;
+  justify-content: center;
 }
 
 /* ===================================================
